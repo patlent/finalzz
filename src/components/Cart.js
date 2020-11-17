@@ -60,9 +60,8 @@ function Cart(){
             <div key={idx}>
 
             <h1 onChange={handleChange("name")}>{person.name}</h1>
-            <h2>$ {person.price}</h2>
+            <h2>Price: {person.price}</h2>
             <h3>Stock: {person.stock}</h3>
-
             <button onClick={()=>handleDelete(person.id)}>Delete Product</button>
 
     </div>

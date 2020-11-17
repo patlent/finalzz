@@ -104,7 +104,7 @@ function Store(props){
                         {CoolPeopleEles.filter(data => data.props.name === props.match.params.id).map(person => (
                             <div>
                                 <h1>{person.props.name}</h1>
-                                <h2>$ {person.props.price}</h2>
+                                <h2>Price: {person.props.price}</h2>
                                 <h4 className={person.props.stock <= 10 ? "lowStock" : "highStock"}>Stock: {person.props.stock}</h4>
                                 {person.props.stock === 0 ? ' ' : <button>Add to Cart</button>}
                             </div>
