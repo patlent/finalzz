@@ -83,19 +83,13 @@ const handleSubmit = ()=>{
 
 
 
-// const CoolPeopleEles = names.map((product, idx)=>
-//
-//     <div className={product.price >= 10?"highStock":"lowStock"} style={{ width: '500px', marginLeft: 'auto', marginRight: 'auto'}} key={idx}>
-//
-//         <h1>{product.name}</h1>
-//         <h2>$ {product.price}</h2>
-//         <h3>Stock: {product.stock}</h3>
-//         <img src={product.image} alt="Product" style={{height: "100px", width: "100px"}}/>
-//
-//         <button>Delete Product</button>
-//
-//     </div>
-// );
+const CoolPeopleEles = names.map((product, idx)=>
+
+    <div key={idx}>
+
+
+    </div>
+);
 
 
 return(
@@ -105,8 +99,8 @@ return(
         <input placeholder={"Price"} onChange={handleChange("price")}/>
         <input placeholder={"Stock"} onChange={handleChange("stock")}/>
         <button onClick={handleSubmit}>Submit</button>
-        {/*<div>{CoolPeopleEles}</div>*/}
 
+        {CoolPeopleEles}
     </div>
 )
 
